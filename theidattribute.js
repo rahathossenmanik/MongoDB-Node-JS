@@ -8,7 +8,7 @@ MongoClient.connect(url, { useNewUrlParser: true }, function(err, db) {
 		{ _id: 1002, name: 'Tasty Lemon'},
 		{ _id: 1003, name: 'Vanilla Dream'}
 	];
-	dbo.collection("Customers").insertMany(myobj, function(err, result) {
+	dbo.collection("Products").insertMany(myobj, function(err, result) {
 		if (err) throw err;
 		console.log(result);
 		db.close();
